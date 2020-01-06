@@ -1,0 +1,32 @@
+{
+  "logs": [
+    {
+      "message": "Changed ethernet cable on workstation 001",
+      "attention": false,
+      "tech": "Eliza Williams",
+      "date": "2020-01-04T07:11:27.706Z",
+      "id": 1
+    },
+    {
+      "id": 3,
+      "message": "Server network card on server 012",
+      "attention": true,
+      "tech": "Tim Smith",
+      "date": "2020-01-04T09:33:36.901Z"
+    },
+    {
+      "message": "Hard drive on workstation 002 not working",
+      "attention": true,
+      "tech": "John Doe",
+      "date": "2020-01-04T09:28:16.095Z",
+      "id": 4
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe"
+    }
+  ]
+}
