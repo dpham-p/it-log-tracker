@@ -17,10 +17,8 @@ const AddLogModal = ({ addLog }) => {
       const newLog = {
         message,
         attention,
-        tech,
-        date: new Date()
+        tech
       };
-
       addLog(newLog);
 
       M.toast({ html: `Log added by ${tech}` });
@@ -29,6 +27,10 @@ const AddLogModal = ({ addLog }) => {
       setAttention(false);
       setTech('');
     }
+  };
+
+  const onChange = e => {
+    setTech(e.target.value);
   };
 
   return (
@@ -54,7 +56,7 @@ const AddLogModal = ({ addLog }) => {
               name='tech'
               value={tech}
               className='browser-default'
-              onChange={e => setTech(e.target.value)}
+              onChange={onChange}
             >
               <option value='' disabled>
                 Select Technician

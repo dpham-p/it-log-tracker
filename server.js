@@ -1,5 +1,5 @@
 const express = require('express');
-const connectDB = require('mongoose');
+const connectDB = require('./db');
 const path = require('path');
 
 const app = express();
@@ -11,7 +11,7 @@ connectDB();
 app.use(express.json());
 
 // Define routes
-app.use('/logs', require('./routes/logs.js'));
+app.use('/logs', require('./routes/logs'));
 app.use('/techs', require('./routes/techs'));
 
 // Serve static assets in production
